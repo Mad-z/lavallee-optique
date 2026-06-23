@@ -12,6 +12,29 @@
 }
 
 /* Global styles */
+
+/* Top banner */
+.top-banner {
+  background: #ffcc00; /* attention color */
+  color: #333;
+  text-align: center;
+  padding: 0.4rem 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+
+/* Header logo */
+.site-header .logo {
+  height: 60px;
+}
+
+/* Navigation layout */
+.site-nav {
+  display: flex;
+  gap: 1rem;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -21,7 +44,15 @@ body {
   padding: 0;
 }
 
-header, footer {
+header.site-header, footer {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
   background-color: rgba(0,0,0,0.1);
   padding: 1rem 2rem;
   text-align: center;
@@ -32,7 +63,14 @@ header h1 {
   font-size: 2.2rem;
 }
 
-nav a {
+nav a,
+.site-nav a {
+  color: var(--white);
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
   color: var(--white);
   margin: 0 0.8rem;
   text-decoration: none;
@@ -71,6 +109,58 @@ main {
 }
 
 /* Products grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.product-card button {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-card button:hover {
+  background: #004c99;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
