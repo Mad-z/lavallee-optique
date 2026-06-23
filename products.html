@@ -19,7 +19,11 @@
   </header>
   <main>
     <h2>Nos Produits</h2>
-    <div class="products-grid">
+    <div class="view-toggle">
+      <button id="grid4" class="active">4 per line</button>
+      <button id="grid3">3 per line</button>
+    </div>
+    <div class="products-grid" id="productGrid">
       <!-- Product cards (using all provided images) -->
       <div class="product-card">
         <img src="assets/images/glass1.jpg" alt="Lunettes modèle 1">
@@ -115,6 +119,21 @@
   </main>
   <footer>
     <p>&copy; 2026 La Vallée d'Optique – Tous droits réservés.</p>
-  </footer>
+  <script>
+  const grid = document.getElementById('productGrid');
+  const btn4 = document.getElementById('grid4');
+  const btn3 = document.getElementById('grid3');
+  btn4.addEventListener('click', () => {
+    grid.classList.remove('grid-3');
+    btn4.classList.add('active');
+    btn3.classList.remove('active');
+  });
+  btn3.addEventListener('click', () => {
+    grid.classList.add('grid-3');
+    btn3.classList.add('active');
+    btn4.classList.remove('active');
+  });
+</script>
+</footer>
 </body>
 </html>
