@@ -353,3 +353,10 @@ footer p {
   margin: 0;
   font-size: 0.9rem;
 }
+/* Ensure 4‑per‑line default (overrides earlier auto‑fit rules) */
+.products-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+.products-grid.grid-3 {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
