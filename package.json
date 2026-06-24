@@ -1,0 +1,11 @@
+{
+  "name": "lavallee-optique",
+  "version": "1.0.0",
+  "description": "Static site for La Vallée d'Optique",
+  "scripts": {
+    "build:css": "cleancss -o css/styles.min.css css/main.css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3"
+  }
+}
