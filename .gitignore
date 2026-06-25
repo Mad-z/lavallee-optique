@@ -1,0 +1,6 @@
+﻿# OS generated files
+Thumbs.db
+# VS Code settings
+.vscode/
+# Node modules (if you ever add a build step)
+node_modules/

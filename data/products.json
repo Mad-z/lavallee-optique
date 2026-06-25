@@ -1,0 +1,12 @@
+﻿[
+  {
+    "id": "g001",
+    "type": "glasses",
+    "name": "Monture Astra 2025",
+    "brand": "Rayâ€‘Ban",
+    "price": "149,00 â‚¬",
+    "description": "Monture lÃ©gÃ¨re en titane, disponible en plusieurs couleurs.",
+    "image": "assets/images/g001.jpg",
+    "features": ["Antireflet", "RÃ©sistance aux chocs"]
+  }
+]

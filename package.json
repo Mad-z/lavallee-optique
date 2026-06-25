@@ -6,6 +6,7 @@
     "build:css": "cleancss -o css/styles.min.css css/main.css"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.6.3"
+    "clean-css-cli": "^5.6.3",
+    "sharp": "^0.35.2"
   }
 }
